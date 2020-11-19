@@ -123,12 +123,12 @@ app.layout = html.Div(children=[
               ),
     html.Hr(style={'color': '#7FDBFF'}),
     html.H3('Line chart', style={'color': '#df1e56'}),
-    html.Div('This line chart represent the Corona Virus confirmed cases of all reported cases in the given period.'),
+    html.Div('This line chart represent the average max temperature in the given period.'),
     dcc.Graph(id='graph4',
               figure={
                   'data': data_linechart,
-                  'layout': go.Layout(title='Corona Virus Confirmed Cases From 2020-01-22 to 2020-03-17',
-                                      xaxis={'title': 'Date'}, yaxis={'title': 'Number of cases'})
+                  'layout': go.Layout(title='Average Max Temperature From 2014-07-1 to 2015-06-30',
+                                      xaxis={'title': 'Date'}, yaxis={'title': 'Average Max Temperature'})
               }
               ),
     html.Hr(style={'color': '#7FDBFF'}),
